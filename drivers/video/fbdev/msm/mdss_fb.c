@@ -74,6 +74,11 @@
 #define EXPORT_COMPAT(x)
 #endif
 
+//Easily enable sRGB with module param
+//Part of the sRGB reset fix!
+int srgb_enabled = 0;
+module_param(srgb_enabled, int, 0644);
+
 #define MAX_FBI_LIST 32
 
 #ifndef TARGET_HW_MDSS_MDP3
